@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a745ceb136.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <title>Scroll Project</title>
+  </head>
+  <body
+    class="bg-gray-900 text-gray-200 flex flex-col justify-center items-center"
+  >
+    <header
+      id="home"
+      style="background-image: url('header-bg-resized.jpg')"
+      class="header h-screen w-full bg-cover bg-center bg-no-repeat border-b-2 border-blue-300"
+    >
+      <div class="h-full w-full flex flex-col items-center">
+        <div class="top-header top-0 w-full py-6 px-16 flex flex-col gap-5">
+          <div class="flex gap-5 justify-between items-center">
+            <div class="logo w-40">
+              <img src="logo.png" alt="Logo Here" />
+            </div>
+            <button id="menu-Button" class="text-gray-300 md:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden md:block">
+              <div class="menu">
+                <ul
+                  id="links"
+                  class="flex md:flex-row flex-col gap-6 text-xl font-semibold"
+                >
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#tours">Tours</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <nav
+            class="slider-menu overflow-hidden md:hidden h-0 transform transition-all delay-75 duration-300 ease-in-out"
+          >
+            <div
+              id="flow-menu"
+              class="menu -translate-y-full transform transition-all delay-75 duration-300 ease-in-out"
+            >
+              <ul
+                id="flow-links"
+                class="flex flex-col gap-4 text-xl font-semibold"
+              >
+                <!-- copied from #links -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!--  -->
+        <div
+          class="hero-content w-2/3 h-full p-12 flex flex-col gap-8 justify-center items-center"
+        >
+          <h1 class="text-6xl font-bold text-center">SCROLL PROJECT</h1>
+          <p class="text-center text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            maiores reiciendis iste officia voluptatum! Voluptates eos harum
+            illo nulla recusandae!
+          </p>
+          <button
+            class="text-4xl font-semibold border-4 border-gray-200 px-4 py-2 align-middle"
+          >
+            Explore Tours
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--  -->
+
+    <div
+      id="about"
+      class="hero w-screen h-screen py-10 text-gray-200 flex flex-col justify-start items-center text-center border-b-2 border-blue-300"
+    >
+      <h1 class="text-5xl font-bold">ABOUT US</h1>
+      <div
+        class="flex flex-col h-full gap-10 justify-center items-center w-2/3"
+      >
+        <div class="content text-xl">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            laborum tempore rerum numquam expedita sequi molestiae quia! Fugiat
+            illum blanditiis minima et similique ipsam, nisi ducimus
+            consectetur, tempora illo optio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div
+      id="services"
+      class="hero w-screen h-screen py-10 text-gray-200 flex flex-col justify-start items-center text-center border-b-2 border-blue-300"
+    >
+      <h1 class="text-5xl font-bold">OUR SERVICES</h1>
+      <div
+        class="flex flex-col h-full gap-10 justify-center items-center w-2/3"
+      >
+        <div class="content text-xl">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            laborum tempore rerum numquam expedita sequi molestiae quia! Fugiat
+            illum blanditiis minima et similique ipsam, nisi ducimus
+            consectetur, tempora illo optio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -->
+
+    <div
+      id="tours"
+      class="hero w-screen h-screen py-10 text-gray-200 flex flex-col justify-start items-center text-center border-b-2 border-blue-300"
+    >
+      <h1 class="text-5xl font-bold">OUR TOURS</h1>
+      <div
+        class="flex flex-col h-full gap-10 justify-center items-center w-2/3"
+      >
+        <div class="content text-xl">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            laborum tempore rerum numquam expedita sequi molestiae quia! Fugiat
+            illum blanditiis minima et similique ipsam, nisi ducimus
+            consectetur, tempora illo optio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -->
+
+    <footer
+      class="bg-gray-950 w-full h-20 flex flex-col items-center justify-center text-center"
+    >
+      <div class="footer">
+        <p>
+          Copyright &copy; Carbon-4 Company <span id="year">20__</span>. All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- -->
+
+    <button>
+      <a
+        href="#home"
+        class="top-sign hidden border-t-8 border-gray-400 w-6 h-10 rounded-t-full fixed bottom-5 right-10"
+      >
+      </a>
+    </button>
+
+    <!-- js -->
+    <script src="scroll.js"></script>
+  </body>
+</html>
